@@ -18,6 +18,13 @@ if RUBY_VERSION >= "3.1.1"
   gem "async", "~>2.0"
 end
 
+if RUBY_VERSION >= "3.5"
+  gem "reline", "~>0.6"
+  gem "irb", "~>1.15"
+  gem "benchmark", "~> 0.4"
+  gem "ostruct", "~>0.6"
+end
+
 # Required for running `jekyll algolia ...` (via `rake site:update_search_index`)
 group :jekyll_plugins do
   gem 'jekyll-algolia', '~> 1.0'
